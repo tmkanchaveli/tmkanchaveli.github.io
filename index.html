@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="A personal desktop utility that routes verified email instructions to designated Codex tasks.">
+  <title>Codex Local Email Watcher</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><a href="index.html">Codex Local Email Watcher</a><nav aria-label="Site"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav></header>
+  <main>
+    <p class="eyebrow">Personal desktop utility</p>
+    <h1>Email instructions, delivered to the right task.</h1>
+    <p class="lead">A local utility for its owner's workflow. It reads selected Gmail conversations and routes verified, directly authored instructions to designated tasks in the Codex desktop app.</p>
+    <h2>What the utility does</h2>
+    <p>The watcher checks selected conversations locally. Empty checks do not invoke an AI model. It accepts only the configured sender, verifies Gmail authentication and conversation identity, and records message IDs to prevent duplicate delivery.</p>
+    <h2>Google access</h2>
+    <p>The utility requests Gmail read-only access through Google's OAuth consent screen. It reads message headers and text needed for the selected conversations. It does not use this permission to send, delete or modify email.</p>
+    <h2>Local operation</h2>
+    <p>Credentials are encrypted for the owner's Windows account. Selected instruction text and processing receipts are stored locally with restricted file access. Accepted instructions are passed to the owner's Codex tasks for processing. The utility can queue instructions while Codex is closed.</p>
+    <h2>Personal use</h2>
+    <p>This is an independent personal automation, not a public email service or an official Google or OpenAI product. This website provides information only; it offers no account registration, mailbox connection or downloadable credentials.</p>
+    <p>Read the <a href="privacy.html">privacy policy</a> and <a href="terms.html">terms of use</a>. Contact the maintainer through the <a href="https://github.com/tmkanchaveli">GitHub profile</a>.</p>
+  </main>
+  <footer>Independent personal utility · Updated September 29, 2026</footer>
+</body>
+</html>
